@@ -15,8 +15,11 @@
     <script src="https://mura5726.github.io/WebMap/tableau.extensions.1.latest.js"></script>
   </head>  
   <body>
-    <input type="text" name="value" size="30" maxlength="20">
-    <button type="button" onclick="SendToTableau()">SendToTableau</button>
-    <div id="output"></div>
+    <form name="form1" action="">
+      <input name="textBox1" type="text" value="" />
+      <input type="button" value="Exec" onclick="onButtonClick();" />
+   </form>
+   <hr />
+   <div id="output"></div>
   </body>
 </html>
