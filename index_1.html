@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TableauExtensionTest</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://mura5726.github.io/TableauExtensionTest/script_1.js" defer></script>
+    <script src="https://mura5726.github.io/WebMap/tableau.extensions.1.latest.js"></script>
+  </head>  
+  <body>
+    <p>Tableauに送信する値 <span id="span1"></span></p>
+    <form name="form1">
+      <input type="text" name="text1" value="65536" maxlength="5">
+    </form>
+    <input type="button" value="値を取得" onclick="clickBtn1()">
+    <input type="button" value="クリア" onclick="clickBtn2()">
+    <input type="button" value="Tableauに送信" onclick="SendToTableau()">
+  </body>
+</html>
