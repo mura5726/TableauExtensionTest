@@ -7,13 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="/script.js" defer></script>
     <script src="https://mura5726.github.io/WebMap/tableau.extensions.1.latest.js"></script>
+    <script>
+      function clickBtn1(){
+        // 値を取得
+        const t1 = document.form1.text1.value;
+        document.getElementById("span1").textContent = t1;
+      }
+      function clickBtn2(){
+        document.getElementById("span1").textContent = "";
+      }
+    </script>
   </head>  
   <body>
-    <form name="form1" action="">
-      <input name="textBox1" type="text" value="" />
-      <input type="button" value="SendToTableau" onclick="SendToTableau();" />
-   </form>
-   <hr />
-   <div id="output"></div>
+    <p>取得した値 <span id="span1"></span></p>
+    <form name="form1">
+      <input type="text" name="text1" value="red" maxlength="5">
+    </form>
+    <input type="button" value="ボタン1" onclick="clickBtn1()">
+    <input type="button" value="クリア" onclick="clickBtn2()">
   </body>
 </html>
+
+
+
